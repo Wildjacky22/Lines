@@ -10,6 +10,6 @@ g = random( 0 , 35 );
 b = random( 0 , 35 );
 
 stroke( r , g , b , 35 );
-line( 10 , 10 , mouseX , mouseY );
+line( windowWidth/2 , windowHeight/2 , mouseX , mouseY );
 
 }
