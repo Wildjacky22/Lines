@@ -24,7 +24,7 @@ function setup() {
  
  //background( r , g , b );
  
- background( 0 , 0 , 0 );
+ //background( 0 , 0 , 0 );
  
   stroke( r , g , b );
   //noStroke();
