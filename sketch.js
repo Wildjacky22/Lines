@@ -1,4 +1,4 @@
- var N = 100;
+ var N = 50;
 
 var B1;
 var B2;
