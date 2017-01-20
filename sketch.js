@@ -1,3 +1,4 @@
+
  var N = 50;
 
 var B1;
@@ -24,7 +25,7 @@ function setup() {
  
  //background( r , g , b );
  
- //background( 0 , 0 , 0 );
+ background( 0 , 0 , 0 );
  
   stroke( r , g , b );
   //noStroke();
@@ -38,11 +39,11 @@ function draw() {
     B1[n].evolveDraw();
     B2[n].evolveDraw();
   
-  var r = random( 0 , 255);
-  var g = random( 0 , 255);
-  var b = random( 0 , 255);
+ var r = random( mouseX , mouseY );
+  var g = random( mouseX , mouseY );
+  var b = random( mouseX , mouseY );
    
-   stroke( 0 , g , 0 , 2 );
+   stroke(random(mouseX*0.3,mouseY*0.3) ,mouseY*0.5 ,mouseX*0.5 , 2);
    line( B1[n].pos.x , B1[n].pos.y , B2[n].pos.x , B2[n].pos.y );
   }
 }
@@ -71,9 +72,9 @@ var Ball = function(){
       this.v.y *=-1;
     }
     
-  var r = random( 0 , 255);
-  var g = random( 0 , 255);
-  var b = random( 0 , 255);
+  var r = random( mouseX , mouseY );
+  var g = random( mouseX , mouseY );
+  var b = random( mouseX , mouseY );
 
    
     point( this.pos.x , this.pos.y , 20 );
@@ -90,4 +91,3 @@ function keyTyped() {
     console.log("saved");
   }
  }
-
